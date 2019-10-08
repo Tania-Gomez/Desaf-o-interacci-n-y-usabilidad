@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie_=edge">
+    <title>Desafio Interaccion y usabilidad</title>
+    <style media="screen">
+    :root {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .h1{
+      font-weight: bold;
+    }
+    .sky {
+      background-color: LIGHTSKYBLUE;
+      height:70vh;
+      weight: 100vw;
+      position: relative;
+    }
+    .sand {
+      background-color: BLANCHEDALMOND;
+      height: 30vh;
+      weight: 100vw;
+      position: relative;
+    }
+    .sun img{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 50px;
+      left: 100px;
+    }
+    .fade-in {
+    	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    @-webkit-keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .text {
+      position: absolute;
+      top: 200px;
+      left: 100px;
+    }
+
+    .people img{
+      height: 150px;
+      position: absolute;
+      bottom: 0;
+      right: 300px;
+    }
+
+    .umbrella img{
+      position: absolute;
+    }
+    .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+     @-webkit-keyframes slide-in-left {
+      0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-left {
+      0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .ball img{
+      height: 200px;
+      position: absolute;
+      right: 200px;
+    }
+    .slide-in-right {
+    	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @-webkit-keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .palm img{
+      position: absolute;
+      height: 200px;
+      left: 500px;
+      top: -100px;
+    }
+    .scale-in-ver-bottom {
+  	-webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	  animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @-webkit-keyframes scale-in-ver-bottom {
+      0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+        opacity: 1;
+      }
+    }
+    @keyframes scale-in-ver-bottom {
+      0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+        opacity: 1;
+      }
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="sky">
+        <div class="sun fade-in">
+          <img src="entregables/ejercicio-3_sun.svg" alt="sun">
+        </div>
+
+        <div class="text fade-in">
+          <h1>Vive el Verano</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+        </div>
+
+      </div>
+
+      <div class="sand">
+
+        <div class="people">
+          <img src="entregables/ejercicio-3_people.svg" alt="people">
+        </div>
+
+        <div class="umbrella slide-in-left">
+          <img src="entregables/ejercicio-3_sun-umbrella.svg" alt="umbrella">
+        </div>
+
+        <div class="ball slide-in-right">
+          <img src="entregables/ejercicio-3_beach-ball.svg" alt="ball">
+        </div>
+
+        <div class="palm scale-in-ver-bottom">
+          <img src="entregables/ejercicio-3_palm-tree.svg" alt="palm">
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

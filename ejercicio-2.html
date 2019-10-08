@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie_=edge">
+    <title>Desafio Interaccion y usabilidad</title>
+    <style media="screen">
+    #grad1 {
+      height: 400px;
+      background-color: cornflowerblue; /* For browsers that do not support gradients */
+      background-image: linear-gradient(to right, cornflowerblue, palevioletred); /* Standard syntax (must be last) */
+    }
+
+    :root {
+      font-family: monospace;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+    }
+
+    .item {
+      width: 200px;
+      height: 70px;
+      background-color: black;
+      color: white;
+      align-self: center;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0, .5, 1, 1) 0.2s;
+    }
+
+    .item:hover {
+      border: 1px solid white;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 2px 2px 5px black;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="grad1">
+      <div class="container">
+        <div class="item"><p>conocer más</p></div>
+      </div>
+    </div>
+  </body>
+
+</html>
